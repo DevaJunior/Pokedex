@@ -7,7 +7,6 @@
             <p>Nºx</p>
           </div>
           <div class="mainpokedex-info-img">
-            <!-- <img :src="currentPokemonImage" alt="pokemon-image" v-if="currentPokemon" /> -->
           </div>
           <div class="mainpokedex-info-nome">
             <p>Charmander</p>
@@ -22,9 +21,7 @@
         </div>
       </section>
     </div>
-
     <div class="main-container-separador"></div>
-
     <div class="pokedex-container-pokemons">
       <div class="mainpokedex-search">
         <p>Search</p>
