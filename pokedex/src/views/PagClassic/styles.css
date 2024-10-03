@@ -1,0 +1,190 @@
+
+.pokemon-pag {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-container-master {
+  width: 100%;
+  height: 97.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../../assets/wallpaper-habitat-000.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pokedex-container {
+  width: 250px;
+  height: 450px;
+  /* height: fit-content; */
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgb(247, 29, 83);
+  border-bottom: 7.5px solid rgb(190, 17, 61);
+  border-left: 7.5px solid rgb(190, 17, 61);
+}
+
+.mainpokedex-status {
+  
+}
+
+.pokedex-container p {
+  text-transform: capitalize;
+}
+
+
+
+.mainpokedex-info {
+  width: 95%;
+  height: fit-content;
+  border-radius: 16px;
+  margin: 20px 0;
+  /* background-color: rgb(235, 235, 235); */
+}
+
+.mainpokedex-info-id {
+  /* margin-left: 50px;
+  padding-left: 40px;
+  border-radius: 25px; */
+  /* border: solid 1px white;
+  background-color: white; */
+  width: fit-content;
+  text-align: end;
+  margin-left: 60px;
+  padding: 0 15px 0 25px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.mainpokedex-info-img {  
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: -45px;
+}
+
+.mainpokedex-info-img img {  
+  width: 150%;
+  height: 150%;
+}
+
+.mainpokedex-info-nome {
+  width: 100%;
+  height: fit-content;
+  text-align: end;
+  margin-top: -40px;
+  padding: 0 20px;
+  box-sizing: border-box; 
+  border-radius: 0 25px 25px 25px;
+  border: solid 1px white;
+  background-color: white;
+}
+
+
+
+.mainpokedex-info-desc {
+  width: 100%;
+  height: fit-content;
+}
+
+
+
+
+
+
+
+
+.mainpokedex-buttons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mainpokedex-buttons button {
+  all: unset;
+  width: 44%;
+  height: fit-content;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 7.5px 0 7.5px 0;
+  border-bottom: 5px solid rgb(37, 37, 37);
+  border-left: 5px solid rgb(37, 37, 37);
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+.mainpokedex-buttons button:hover {
+  /* border: none; */
+  border-bottom: 3px solid rgb(37, 37, 37);
+  border-left: 3px solid rgb(37, 37, 37);
+}
+
+
+
+
+.main-container-separador {
+  width: 20px;
+  height: 325px;
+  border-radius: 25px;
+  margin-left: -10px;
+  background-color: rgb(247, 29, 83);
+  border-left: 10px solid rgb(190, 17, 61);
+}
+
+
+.mainpokedex-search {  
+  box-sizing: border-box; 
+}
+
+
+.pokedex-container-pokemons {
+  width: 250px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgb(247, 29, 83);
+  border-bottom: 7.5px solid rgb(190, 17, 61);
+  border-left: 7.5px solid rgb(190, 17, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .pokemon-list {
+  display: flex;
+  justify-content: center;
+} */
+
+.pokemon-list {
+  /* margin-top: 25px; */
+  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  border-radius: 12px;
+  overflow-y: scroll; /* Ativa apenas o scroll vertical */
+  overflow-x: hidden; /* Desativa o scroll horizontal */
+  margin-bottom: 10px;
+}
+
+.pokemon-list::-webkit-scrollbar {
+  width: 0; /* Torna a barra de rolagem invisível */
+}
+
+.pokemon-list::-webkit-scrollbar-thumb {
+  background-color: transparent; /* O polegar da rolagem também será invisível */
+}
+
+.pokemon-list::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; /* Mesmo ao passar o mouse, permanece invisível */
+}

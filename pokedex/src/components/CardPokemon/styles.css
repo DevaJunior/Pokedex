@@ -1,0 +1,39 @@
+.cardpokemon-container {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  background-color: #fff;
+  /* background-color: rgb(69, 255, 146); */
+}
+
+.cardpokemon-img {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(240, 240, 240);
+}
+
+.cardpokemon-img img {
+  width: 125%;
+  height: 125%;
+}
+
+.cardpokemon-info {
+  width: 90%;
+  margin-left: 15px;
+}
+
+.cardpokemon-info p {
+  color: rgb(119, 119, 119);
+}
+
+.cardpokemon-info h3 {
+  margin-top: -15px;
+}

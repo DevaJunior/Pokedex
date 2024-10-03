@@ -1,10 +1,12 @@
 <template>
   <div>
-    <p>Pokedex</p>
+    <PagClassic />
   </div>
 </template>
 
 <script setup lang="ts">
+
+import PagClassic from './views/PagClassic/index.vue';
 
 </script>
 
