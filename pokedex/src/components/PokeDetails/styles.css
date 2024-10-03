@@ -1,0 +1,62 @@
+.pokemon-pag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pokemon-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.poke-details {
+  height: 280px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0 20px 5px 20px;
+}
+
+.pokedetails-esta strong {
+  text-transform: capitalize;
+}
+
+.pokedetails-esta p {
+  text-transform: capitalize;
+}
+
+.pokedetails-esta li {
+  text-transform: capitalize;
+}
+
+.pokedetails-altura {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokedetails-habi {
+  margin-top: -5px;
+}
+
+.pokedetails-tipos {
+  margin-top: -5px;
+}
+
+.pokedetails-tipos span {
+  margin-top: -5px;margin: 0 5px;
+}
+
+.pokedetails-esta {
+  margin-top: 15px;
+}
+
+.pokedetails-esta ul {
+  margin-top: 0;
+}
+
+

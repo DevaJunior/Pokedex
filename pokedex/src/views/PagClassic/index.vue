@@ -48,12 +48,14 @@ import './styles.css';
 import { defineComponent, ref, computed } from 'vue';
 import CardPokemon from '../../components/CardPokemon/index.vue';
 import SearchBar from '../../components/SearchBar/index.vue';
+import PokeDetails from '../../components/PokeDetails/index.vue';
 import { getPokemonList, Pokemon } from '../../services/pokemon';
 
 export default defineComponent({
   components: {
     CardPokemon,
     SearchBar,
+    PokeDetails,
   },
   setup() {
     const pokemons = ref<Pokemon[]>([]);
@@ -76,14 +78,14 @@ export default defineComponent({
     };
 
     const filteredPokemons = computed(() => {
-      return pokemons.value; // Aqui você pode adicionar filtragem, se necessário
+      return pokemons.value;
     });
 
     const currentPokemon = computed(() => {
       const pokemon = filteredPokemons.value[currentIndex.value] || null;
       if (pokemon) {
         const id = Number(pokemon.url.split('/')[6]); // Converte o ID para número
-        return { ...pokemon, id }; // Retorna o Pokémon com o ID convertido
+        return { ...pokemon, id };
       }
       return null;
     });
@@ -118,7 +120,7 @@ export default defineComponent({
     };
 
     const selectPokemon = (index: number) => {
-      currentIndex.value = index; // Atualiza o currentIndex com o índice do card clicado
+      currentIndex.value = index;
     };
 
     fetchPokemons();
