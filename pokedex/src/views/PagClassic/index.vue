@@ -12,6 +12,9 @@
           <div class="mainpokedex-info-nome">
             <p>{{ currentPokemon?.name }}</p>
           </div>
+
+          <!-- <PokemonEvolutions :pokemonId="currentPokemon?.id" /> -->
+
           <div class="mainpokedex-info-desc">
             <PokeDetails v-if="currentPokemon" :pokemon="currentPokemon" />
           </div>
@@ -50,12 +53,14 @@ import CardPokemon from '../../components/CardPokemon/index.vue';
 import SearchBar from '../../components/SearchBar/index.vue';
 import PokeDetails from '../../components/PokeDetails/index.vue';
 import { getPokemonList, Pokemon } from '../../services/pokemon';
+import PokemonEvolutions from '../../components/EvolutionChain/index.vue';
 
 export default defineComponent({
   components: {
     CardPokemon,
     SearchBar,
     PokeDetails,
+    PokemonEvolutions,
   },
   setup() {
     const pokemons = ref<Pokemon[]>([]);
